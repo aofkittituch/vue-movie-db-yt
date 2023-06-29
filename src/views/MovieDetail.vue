@@ -19,7 +19,7 @@ export default {
 
     onBeforeMount(async () => {
       await fetch(
-        `http://www.omdbapi.com/?apikey=${env.apiKey}&i=${route.params.id}&plot=full`
+        `https://www.omdbapi.com/?apikey=${env.apiKey}&i=${route.params.id}&plot=full`
       )
         .then((res) => res.json())
         .then((data) => {
